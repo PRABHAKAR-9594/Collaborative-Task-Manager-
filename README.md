@@ -82,3 +82,84 @@ And connect to the backend on:
 http://localhost:8080
 
 ```
+
+## GET /api/?status=Done&assignto=Prabhakar
+
+
+**Response:**
+```json
+[
+  {
+    "_id": "666a4f8b123abc456def0001",
+    "title": "Fix login bug",
+    "description": "Handle error on login",
+    "assignto": "Prabhakar",
+    "status": "Done",
+    "createdAt": "2024-06-15T10:20:00Z"
+  }
+]
+
+```
+## ✅ POST /api/createTask
+
+**Description: Create a new task**
+
+Request Body:
+```json
+{
+  "title": "Design UI",
+  "description": "Create mockup for homepage",
+  "assignto": "Dinesh",
+  "status": "To Do"
+}
+```
+
+**Expected Response:**
+```json
+{
+  "_id": "666a4f8b123abc456def0002",
+  "title": "Design UI",
+  "description": "Create mockup for homepage",
+  "assignto": "Dinesh",
+  "status": "To Do",
+  "createdAt": "2024-06-15T10:30:00Z"
+}
+```
+
+## ✅ PUT /updatetask/:id
+
+**Description: Update a task by its ID** 
+
+Request Body Example:
+``` json 
+
+{
+  "status": "In Progress",
+  "assignto": "Prabhakar"
+}
+
+```
+**Expected Response:**
+
+```json 
+
+{
+  "_id": "666a4f8b123abc456def0002",
+  "title": "Design UI",
+  "description": "Create mockup for homepage",
+  "assignto": "Prabhakar",
+  "status": "In Progress",
+  "updatedAt": "2024-06-15T11:00:00Z"
+}
+
+```
+
+## ✅ DELETE /deletetask/:id
+**Description: Delete a task by its ID** 
+
+Expected Response:
+```json 
+{
+  "message": "Task deleted successfully"
+}
+```
