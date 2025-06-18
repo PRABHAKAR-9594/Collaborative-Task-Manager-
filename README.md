@@ -126,7 +126,7 @@ Request Body:
 }
 ```
 
-## ✅ PUT /updatetask/:id
+## ✅ PUT /api/updatetask/:id
 
 **Description: Update a task by its ID** 
 
@@ -154,7 +154,7 @@ Request Body Example:
 
 ```
 
-## ✅ DELETE /deletetask/:id
+## ✅ DELETE /api/deletetask/:id
 **Description: Delete a task by its ID** 
 
 Expected Response:
