@@ -83,7 +83,7 @@ http://localhost:8080
 
 ```
 
-## GET /api/?status=Done&assignto=Prabhakar
+## ✅GET /api/?status=Done&assignto=Prabhakar
 
 
 **Response:**
